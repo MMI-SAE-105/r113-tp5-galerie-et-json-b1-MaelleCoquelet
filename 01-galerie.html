@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galerie</title>
     <style>
-        .overlay {
-    /* Sit on top of the page content */
-    /* Full width (cover the whole page) */
-    /* Full height (cover the whole page) */
-    /* Stay at the top */
-    /* Stay at the left */
-    /* Stay at the right */
-    /* Stay at the bottom */
-    /* Black background with opacity */
-    /* Add a pointer on hover */
-    /* Use a grid for easy centering */
-    /* Center vertically and horizontally */
-}
-.overlay::after {
-    /* Add content : "X" */
-    /* White text color */
-    /* Black background color */
-    /* Font family "sans-serif" */
-    /* Centered text */
-    /* Line height ( idem height ) */
-    /* Display as a block */
-    /* Position absolute */
-    /* 1rem from the top */
-    /* 1rem from the right */
-    /* 2rem width */
-    /* 2rem height */
-    /* White border of 2px */
-    /* Rounded border */
-}
-.overlay>figure {
-    /* No margin */
-    /* 1rem padding */
-    /* White border of 2px */
-}
+      .overlay {
+        /* Sit on top of the page content */
+        /* Full width (cover the whole page) */
+        width: 100%;
+        /* Full height (cover the whole page) */
+        height: 100%;
+        /* Stay at the top */
+        top: 0;
+        /* Stay at the left */
+        left: 0;
+        /* Stay at the right */
+        right: 0;
+        /* Stay at the bottom */
+        bottom: 0;
+        /* Black background with opacity */
+        background-color: rgba(0, 0, 0, 5);
+        /* Add a pointer on hover */
+        cursor: pointer;
+        /* Use a grid for easy centering */
+        display: grid;
+        /* Center vertically and horizontally */
+        place-content: center;
+      }
+      .overlay::after {
+        /* Add content : "X" */
+        /* White text color */
+        /* Black background color */
+        /* Font family "sans-serif" */
+        /* Centered text */
+        /* Line height ( idem height ) */
+        /* Display as a block */
+        /* Position absolute */
+        /* 1rem from the top */
+        /* 1rem from the right */
+        /* 2rem width */
+        /* 2rem height */
+        /* White border of 2px */
+        /* Rounded border */
+      }
+      .overlay > figure {
+        /* No margin */
+        /* 1rem padding */
+        /* White border of 2px */
+      }
 
-.overlay>figure>img {
-    /* Max width 100% for responsive image */
-    /* Height auto for keeping the ratio */
-}
+      .overlay > figure > img {
+        /* Max width 100% for responsive image */
+        /* Height auto for keeping the ratio */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Galerie</h1>
-<p>lorem⇥</p>
-<div class="overlay">
-    <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
-</div>
-</body>
+    <p>lorem⇥</p>
+    <div class="overlay">
+      <figure>
+        <img
+          src="https://picsum.photos/id/237/400/300"
+          alt="image 237... un chiot"
+        />
+      </figure>
+    </div>
+  </body>
 </html>
