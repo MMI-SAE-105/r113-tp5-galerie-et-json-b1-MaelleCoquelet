@@ -6,6 +6,14 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
     <title>Galerie</title>
     <style>
+      p {
+        padding-bottom: 10px;
+        font-family: sans-serif;
+      }
+      h1 {
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+      }
       .overlay {
         /* Sit on top of the page content */
         position: absolute;
@@ -79,9 +87,27 @@
   </head>
   <body x-data="{affichageImg:null}">
     <h1>Galerie</h1>
-    <p>lorem⇥</p>
-    <img src="https://picsum.photos/id/237/40/60" alt="Miniature de chiot" @click="affichageImg='https://picsum.photos/id/237/400/300'"/>
-    <img src="https://picsum.photos/id/238/40/60" alt="Miniature de chiot" @click="affichageImg='https://picsum.photos/id/238/400/300'"/>
+    <p>
+      Marie Vieux-Chauvet, née le 16 septembre 1916 à Port-au-Prince (Haïti) et
+      morte le 19 juin 1973 à New York (États-Unis), est une femme de lettres,
+      dramaturge et romancière haïtienne. Elle commence à publier en 1947. Un de
+      ses romans les plus connus, Amour, Colère et Folie, publié plus de vingt
+      ans plus tard, en 1968, est une forte dénonciation du régime Duvalier, qui
+      tente d'en bloquer la diffusion, et des Tontons Macoutes, la milice
+      paramilitaire du régime, qui sème la terreur dans le pays. Elle est
+      contrainte de s'exiler en 1968 pour échapper au pouvoir haïtien, et meurt
+      quelques années après son installation à New York.
+    </p>
+    <img
+      src="https://picsum.photos/id/237/40/60"
+      alt="Miniature de chiot"
+      @click="affichageImg='https://picsum.photos/id/237/400/300'"
+    />
+    <img
+      src="https://picsum.photos/id/238/40/60"
+      alt="Miniature de chiot"
+      @click="affichageImg='https://picsum.photos/id/238/400/300'"
+    />
     <div
       class="overlay"
       x-show="affichageImg"
