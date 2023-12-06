@@ -19,6 +19,10 @@
         padding: 0px;
         font-family: "Courier New", Courier, monospace;
       }
+      .minia {
+        padding: 10px;
+        border: solid 3px white;
+      }
       .overlay {
         /* Sit on top of the page content */
         position: absolute;
@@ -104,11 +108,13 @@
       quelques années après son installation à New York.
     </p>
     <img
+      class="minia"
       src="https://picsum.photos/id/237/40/60"
       alt="Miniature de chiot"
       @click="affichageImg='https://picsum.photos/id/237/400/300'"
     />
     <img
+      class="minia"
       src="https://picsum.photos/id/238/40/60"
       alt="Miniature de chiot"
       @click="affichageImg='https://picsum.photos/id/238/400/300'"
