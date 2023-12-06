@@ -77,12 +77,19 @@
       }
     </style>
   </head>
-  <body x-data="{affichageImg:'https://picsum.photos/id/237/400/300',}">
+  <body x-data="{affichageImg:null}">
     <h1>Galerie</h1>
     <p>lorem⇥</p>
-    <div class="overlay" x-show="affichageImg" @click="affichageImg=null">
+    <img src="https://picsum.photos/id/237/40/60" alt="Miniature de chiot" @click="affichageImg='https://picsum.photos/id/237/400/300'"/>
+    <img src="https://picsum.photos/id/238/40/60" alt="Miniature de chiot" @click="affichageImg='https://picsum.photos/id/238/400/300'"/>
+    <div
+      class="overlay"
+      x-show="affichageImg"
+      @click="affichageImg=null"
+      @keyup.escape.window="affichageImg=null"
+    >
       <figure>
-        <img :src="affichageImg" alt="image 237... un chiot" />
+        <img :src="affichageImg" alt="un chiot" />
       </figure>
     </div>
   </body>
