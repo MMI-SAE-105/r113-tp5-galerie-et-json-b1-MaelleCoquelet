@@ -10,7 +10,10 @@
     <h1>JSON</h1>
     <ul
       x-data="{
-        donnees: 
+        async donnees () {
+            const resp = await fetch('data.json');
+            return await resp.json();
+        }
         }"
     >
       <template x-for="obj in donnees">
