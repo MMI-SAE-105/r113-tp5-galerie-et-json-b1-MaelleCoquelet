@@ -3,28 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <title>Document</title>
   </head>
   <body>
     <h1>JSON</h1>
     <ul
-      x-data="{donnees:[
+      x-data="{
+        donnees: [
         {
             nom:'Jean',
             projet:'Alpine.js',
-            url:'https://alpinejs.dev'},
+            url:'https://alpinejs.dev',
+        },
             {
             nom:'Maxime',
             projet:'Tailwind.css',
             url:'https://tailwindcss.com' 
-            }
+            },
             {
             nom:'Adam',
             projet:'Laravel',
-            url:'https://laravel.com'}
+            url:'https://laravel.com'
+        }
             ],
         }"
     >
-</ul>
+    </ul>
   </body>
 </html>
